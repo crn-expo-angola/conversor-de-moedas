@@ -3,7 +3,7 @@ export default{
         principal: "#03d967",
         texto: "#003038",
         fundo: "#ffffff",
-        title: "#edf3cd"
+        title: "#eeeeee"
     },
     fonts: {
         regular: 'Poppins_400Regular',

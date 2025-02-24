@@ -1,6 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-
 import AppLoading from 'expo-app-loading';
 
 import { 
@@ -9,7 +6,7 @@ import {
   Poppins_500Medium,
   Poppins_700Bold
 } from '@expo-google-fonts/poppins';
-import themes from './src/global/themes';
+import Home from './src/Home';
 
 export default function App() {
 
@@ -24,23 +21,6 @@ export default function App() {
   }
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.Title}>Vamos começar!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Home />
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  Title: {
-    fontFamily: themes.fonts.bold,
-    color: themes.colors.principal,
-    fontSize: 18
-  }
-});
