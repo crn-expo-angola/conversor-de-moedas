@@ -45,8 +45,6 @@ export default function Home() {
 
     try {
       const { data } = await api.get(`${apiKey}/latest/AOA`);
-      console.log('data:', data);
-
       const rates = data.conversion_rates;
 
       if (rates[moeda]) {
