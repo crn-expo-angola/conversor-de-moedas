@@ -76,5 +76,21 @@ export const stylesHome = StyleSheet.create({
   },
   titleMoeda:{
     fontFamily: themes.fonts.regular
+  },
+  BtnConverter:{
+    backgroundColor: themes.colors.principal,
+    borderRadius: 5,
+    width: '100%',
+    height: 50,
+    fontSize: 16,
+    paddingHorizontal: 10,
+    justifyContent: 'center',
+    alignItems: "center",
+    marginTop: "50%"
+  },
+  BtnConverterTexto:{
+    color: themes.colors.title,
+    fontFamily: themes.fonts.midium,
+    fontSize: 18
   }
 });

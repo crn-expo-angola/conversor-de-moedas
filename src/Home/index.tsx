@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import { StatusBar } from 'expo-status-bar';
-import { Text, TextInput, View } from 'react-native';
+import { Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { stylesHome } from './styles';
 import RNPickerSelect from "react-native-picker-select";
 import themes from '../global/themes';
@@ -57,6 +57,10 @@ export default function Home() {
             </View>
           </View>
         </View>
+
+        <TouchableOpacity style={stylesHome.BtnConverter} onPress={()=>{}}>
+          <Text style={stylesHome.BtnConverterTexto}>Converter</Text>
+        </TouchableOpacity>
       </View>
 
     </View>
